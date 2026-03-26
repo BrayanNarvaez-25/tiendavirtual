@@ -58,6 +58,23 @@ public class Cliente {
                 ", Saldo=" + saldo +
                 ", Compras realizadas=" + totalCompras);
     }
+        //METODO REALIZAR COMPRA
+    public void realizarCompra(double monto) {
+        if (monto > saldo) {
+            System.out.println("Saldo insuficiente.");
+            System.out.println("Saldo actual " + saldo);
+        } else {
+            saldo -= monto;
+            totalCompras++;
+            System.out.println("Compra exitosa por " + monto);
+            System.out.println("Saldo restante: " + saldo);
+        }
+    }
+
+    //METODO MOSTRAR SALDO
+    public void mostrarSaldo() {
+        System.out.println("Saldo actual: " + saldo);
+    }
 
 
 }
