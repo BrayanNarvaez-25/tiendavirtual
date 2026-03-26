@@ -15,4 +15,13 @@ public class Producto {
     public void mostrarInfo() {
 		System.out.println("Producto: "+ this.nombre + "\nCategoría: "+ this.categoria+"\nPrecio: $"+ this.precio+"\nStock: "+ this.stock+" unidades");
 	}
+
+    public void aplicarDescuento(double porcentaje) {
+		
+		double montoDescontado = this.precio * (porcentaje / 100);
+		double precioFinal = this.precio - montoDescontado;
+		
+		System.out.println("Descuento del 15.0% : -$"+montoDescontado);
+		System.out.println("Precio con descuento: $"+precioFinal);
+	}
 }
