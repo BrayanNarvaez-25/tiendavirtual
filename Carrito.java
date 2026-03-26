@@ -35,6 +35,7 @@ public class Carrito {
         for (int i = 0; i < cantidad; i++) {
             System.out.println((i + 1) + ". " + productos[i] + " $" + precios[i]);
         }
+        
 
     
 }
