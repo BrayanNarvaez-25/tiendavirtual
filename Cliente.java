@@ -19,7 +19,45 @@ public class Cliente {
         this.saldo = saldo;
         this.totalCompras = 0;
     }
+
     
+
+    //METODOS GETTERS Y SETTERS
+    public String getNombre() {
+        return nombre;
+    }
+
+    public String getCorreo() {
+        return correo;
+    }
+
+    public double getSaldo() {
+        return saldo;
+    }
+
+    public int getTotalCompras() {
+        return totalCompras;
+    }
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+    public void setCorreo(String correo) {
+        this.correo = correo;
+    }
+    public void setSaldo(double saldo) {
+        this.saldo = saldo;
+    }
+    public void setTotalCompras(int totalCompras) {
+        this.totalCompras = totalCompras;
+    }
+
+    //METODO MOSTRAR PERFIL
+    public void mostrarPerfil() {
+        System.out.println("Cliente='" + nombre + '\'' +
+                ", Correo='" + correo + '\'' +
+                ", Saldo=" + saldo +
+                ", Compras realizadas=" + totalCompras);
+    }
 
 
 }
