@@ -24,4 +24,13 @@ public class Producto {
 		System.out.println("Descuento del 15.0% : -$"+montoDescontado);
 		System.out.println("Precio con descuento: $"+precioFinal);
 	}
+
+    public void verificarStock(int cantidad) {
+		
+		if(cantidad <= this.stock) {
+			System.out.println("Disponible");
+		}else {
+			System.out.println("Stock insuficiente. Disponible: "+this.stock+" unidades.");
+		}
+	}
 }
