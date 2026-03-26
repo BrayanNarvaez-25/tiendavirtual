@@ -12,4 +12,7 @@ public class Producto {
 		this.categoria = categoria;
 	}
 	
+    public void mostrarInfo() {
+		System.out.println("Producto: "+ this.nombre + "\nCategoría: "+ this.categoria+"\nPrecio: $"+ this.precio+"\nStock: "+ this.stock+" unidades");
+	}
 }
