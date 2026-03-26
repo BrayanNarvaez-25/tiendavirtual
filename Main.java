@@ -6,7 +6,7 @@ public class Main {
 
         // --- Integrante 1: Producto ---
         // Crear una instancia de Producto con datos reales.
-        Producto producto1 = new Producto("Audífonos Bluetooth", 89.99, 50, "Electrónica");
+        Producto producto1 = new Producto("Audífonos Bluetooth","Electrónica", 89.99, 50 );
         
         // Llamar a: mostrarInfo(), aplicarDescuento() y verificarStock().
         producto1.mostrarInfo();

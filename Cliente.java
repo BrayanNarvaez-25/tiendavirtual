@@ -1,5 +1,3 @@
-package tiendavirtual;
-
 public class Cliente {
     private String nombre; //nombre completo cliente
     private String correo; //correo electronico cliente
